@@ -26,24 +26,24 @@ const {
 // METODOS HTTP
 
 // Obtener usuarios poner atención al plural en "/users"
-router.get("/user", getUsers);
+router.get("/users", getUsers);
 // Obtener usuario por ID
-router.get("/user/:id", validator.params(paramsSchema), getUser);
+router.get("/users/:id", validator.params(paramsSchema), getUser);
 // Crear usuario
 router.post(
-  "/user",
+  "/users",
 
   validator.body(createUserSchema),
   createUser
 );
 //Actualizar info de usuario por ID
 router.put(
-  "/user/:id",
+  "/users/:id",
   validator.params(paramsSchema),
   validator.body(updateUserSchema),
   updateUser
 );
 //Eliminar Usuario por ID
-router.delete("/user/:id", validator.params(paramsSchema), deleteUser);
+router.delete("/users/:id", validator.params(paramsSchema), deleteUser);
 
 module.exports = router;
