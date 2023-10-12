@@ -1,0 +1,35 @@
+{
+  "name": "proyectoequipo1",
+  "version": "1.0.0",
+  "description": "Proyecto \"!Perrin!!Perrout!\" (Pensión de perros) en donde se trata de aplicar lo aprendido en el módulo BACKEND CON NODE.JS Pertenece al equipo 1",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "start:dev": "nodemon index.js",
+    "start:devenv": "nodemon -r dotenv/config index.js "
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BrunoPCH/ProyectoBeduModuloNodeEquipo1.git"
+  },
+  "keywords": [
+    "REST"
+  ],
+  "author": "Alan Fabian Valdez - falaq23.2022@gmail, Bruno Pérez Chávez - bruno.perez.ch@gmail.com, Charly Moo - charlymooayala@gmail.com, Vinisa Citlalli Hernández Basilio - citlallihernandezbasilio@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BrunoPCH/ProyectoBeduModuloNodeEquipo1/issues"
+  },
+  "homepage": "https://github.com/BrunoPCH/ProyectoBeduModuloNodeEquipo1#readme",
+  "devDependencies": {
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "nodemon": "^3.0.1"
+  },
+  "dependencies": {
+    "express-joi-validation": "^5.0.1",
+    "joi": "^17.10.2",
+    "sequelize": "^6.33.0",
+    "sqlite3": "^5.1.6"
+  }
+}
