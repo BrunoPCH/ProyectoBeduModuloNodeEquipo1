@@ -12,7 +12,7 @@ exports.createUserSchema = Joi.object({
     .pattern(/^(?=.{5,50}$)(?![_.])(?!.*[_.]{2})[a-zA-Z0-9._]+(?<![_.])$/)
     .required(),
   fullName: Joi.string().max(50).required(),
-  email: Joi.string().max(100).email().required(),
+  email: Joi.string().max(20).email().required(),
   password: Joi.string().min(8).max(20).required(),
 });
 
@@ -23,7 +23,7 @@ exports.updateUserSchema = Joi.object({
     .pattern(/^(?=.{5,50}$)(?![_.])(?!.*[_.]{2})[a-zA-Z0-9._]+(?<![_.])$/)
     .optional(),
   fullName: Joi.string().max(50).optional(),
-  email: Joi.string().max(100).email().optional(),
+  email: Joi.string().max(20).email().optional(),
   password: Joi.string().min(8).max(20).optional(),
 }).min(1);
 
