@@ -10,6 +10,8 @@ const User = require("./models/user");
 
 //Exporta BD y ESPERA FUNCIONES ASINCRONAS CONNECT y SYNC que estan en sequelize.js
 exports.initDatabase = async function () {
+  //FALTA PONER LAS RELACIONES DE LA DB
+
   await connect();
   await sync();
 };
