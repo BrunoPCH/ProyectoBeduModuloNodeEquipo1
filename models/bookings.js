@@ -26,7 +26,7 @@ module.exports = sequelize.define("booking", {
   },
   isBookingActive: {
     type: DataTypes.BOOLEAN,
-    allowNull: false,
+    allowNull: true,
     defaultValue: false,
   },
   observations: {

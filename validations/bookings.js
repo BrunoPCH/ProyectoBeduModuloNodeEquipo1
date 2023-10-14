@@ -9,38 +9,18 @@ const Joi = require("joi");
 //     created_at timestamp [note:'Generado automaticamente']
 //     Note: '📆 basado en check in y check out'
 //     }
-// checkInDate: {
-//     type: DataTypes.DATEONLY,
-//     allowNull: false,
-//     unique: false,
-//   },
-//   checkOutDate: {
-//     type: DataTypes.DATEONLY,
-//     allowNull: false,
-//     unique: false,
-//   },
-//   isBookingActive: {
-//     type: DataTypes.BOOLEAN,
-//     allowNull: false,
-//     defaultValue: false,
-//   },
-//   observations: {
-//     type: DataTypes.STRING(200),
-//     allowNull: true,
-//   },
 
 exports.createBookingSchema = Joi.object({
   checkInDate: Joi.date().greater("now").requiered(),
   checkOutDate: Joi.date().greater(Joi.ref("checkInDate")).required(),
-  isBookingActive: Joi.boolean().optional,
-  observations: Joi.string().min(8).max(200).optional,
+  isBookingActive: Joi.boolean().optional(),
+  observations: Joi.string().min(8).max(200).optional(),
 });
 
 exports.updateBookingSchema = Joi.object({
   checkInDate: Joi.date().greater("now").optional(),
   checkOutDate: Joi.date().greater(Joi.ref("checkInDate")).optional(),
-  isBookingActive: Joi.boolean().optional,
-  observations: Joi.string().min(8).max(200).optional,
+  isBookingActive: Joi.boolean().optional(),
 }).min(1);
 
 exports.paramsSchema = Joi.object({
