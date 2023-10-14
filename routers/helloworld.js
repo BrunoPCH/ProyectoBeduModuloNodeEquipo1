@@ -6,6 +6,6 @@ router.get("/helloworld", function (request, response) {
   response.send("Hello world 🖖🏼");
 });
 router.get("/godbye", function (request, response) {
-  response.send("Camaraaaa!!!");
+  response.send("Adios mundo cruel 💁🏼‍♂️!!!");
 });
 module.exports = router;
