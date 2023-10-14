@@ -4,21 +4,21 @@ name: Continuos Delivery
 #on: [push]
 
 #Solo en push a master
-on: 
+on:
   push:
-      branches:
-        - master
+    branches:
+      - master
 
 Jobs:
   continuos-delivery:
     runs-on: ubuntu-latest
-      steps:
-        - name: Clonar la última versión del código
-          uses: actions/checkout@v4
+    steps:
+      - name: Clonar la última versión del código
+        uses: actions/checkout@v4
 
-        - name: Configurar node.js
-          uses: actions/setup-node@v3
-          with:
-            node-version: 14.21.1
-        
-        - run: npm install
+      - name: Configurar node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 14.21.1
+
+      - run: npm install
