@@ -4,7 +4,8 @@ name: Continuos Delivery
 #on: [push]
 
 #Solo en push a master
-on: push:
+on: 
+  push:
       branches:
         - master
 
