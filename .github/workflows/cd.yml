@@ -23,16 +23,16 @@ jobs:
 
       - run: npm install
   continuos-deployment:
-  runs-on: ubuntu-latest
-  steps:
-    - name: Deploy on server
-      uses: appleboy/ssh-action@v1.0.0
-      with:
-        key: ${{ secrets.SSH_PRIVATE_KEY }}
-        host: ${{ secrets.SSH_HOST }}
-        username: ${{ secrets.SSH_USERNAME }}
-        script: |
-          cd ProyectoBeduModuloNodeEquipo1 
-          git pull origin master
-          npm install --production
-          pm2 restart index.js
+    runs-on: ubuntu-latest
+      steps:
+      - name: Deploy on server
+        uses: appleboy/ssh-action@v1.0.0
+          with:
+            key: ${{ secrets.SSH_PRIVATE_KEY }}
+            host: ${{ secrets.SSH_HOST }}
+            username: ${{ secrets.SSH_USERNAME }}
+            script: |
+              cd ProyectoBeduModuloNodeEquipo1 
+              git pull origin master
+              npm install --production
+              pm2 restart index.js
