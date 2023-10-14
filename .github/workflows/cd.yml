@@ -9,7 +9,7 @@ on:
     branches:
       - master
 
-Jobs:
+jobs:
   continuos-delivery:
     runs-on: ubuntu-latest
     steps:
