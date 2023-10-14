@@ -23,7 +23,7 @@ jobs:
 
       - run: npm install
   continuos-deployment:
-  run-on: ubuntu-latest
+  runs-on: ubuntu-latest
   steps:
     - name: Deploy on server
       uses: appleboy/ssh-action@v1.0.0
