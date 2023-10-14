@@ -11,7 +11,7 @@ const Joi = require("joi");
 //     }
 
 exports.createBookingSchema = Joi.object({
-  checkInDate: Joi.date().greater("now").requiered(),
+  checkInDate: Joi.date().greater("now").required(),
   checkOutDate: Joi.date().greater(Joi.ref("checkInDate")).required(),
   isBookingActive: Joi.boolean().optional(),
   observations: Joi.string().min(8).max(200).optional(),
