@@ -1,6 +1,6 @@
 const Joi = require("joi");
 
-exports.createDog = Joi.object({
+exports.createDogSchema = Joi.object({
   name: Joi.string()
     .min(2)
     .max(50)
@@ -16,7 +16,7 @@ exports.createDog = Joi.object({
   notes: Joi.string().min(5).max(200).optional()
 });
 
-exports.updateDog = Joi.object({
+exports.updateDogSchema = Joi.object({
   name: Joi.string()
     .min(2)
     .max(50)

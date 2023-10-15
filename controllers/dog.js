@@ -1,41 +1,44 @@
 // Importando funciones de carpeta services
 const {
-  findAll,
-  findById,
-  insert,
-  deleteById,
-  update,
-} = require("../services/user");
+  getAllDog,
+  findDog,
+  insertDog,
+  deleteDog,
+  updateDog,
+} = require("../services/dog");
 
-exports.getUsers = async function (request, response) {
-  const users = await findAll();
-  response.status(200).json(users);
+exports.getDogs = async function (request, response) {
+  const dogs = await getAllDog();
+  response.status(200).json(dogs);
 };
 
-exports.getUser = async function (request, response) {
+exports.getDog = async function (request, response) {
   const { id } = request.params;
-  const user = await findById(id);
-  response.status(200).json(user);
+  const dog = await findDog(id);
+  response.status(200).json(dog);
 };
 
-exports.createUser = async function (request, response) {
-  const { username, fullName, email, password } = request.body;
-  const user = await insert({ username, fullName, email, password, userId: 1 });
-  response.status(201).json(user);
+exports.createDog = async function (request, response) {
+  const { name, age, breed, vaccinated, unfriendly_dog, weight, 
+          has_allergies, allergies, notes } = request.body;
+  const dog = await insertDog({  name, age, breed, vaccinated, unfriendly_dog, weight, 
+    has_allergies, allergies, notes });
+  response.status(201).json(dog);
 };
 
-exports.updateUser = async function (request, response) {
-  const { username, fullName, email, password } = request.body;
+exports.updateDog = async function (request, response) {
+  const { name, age, breed, vaccinated, unfriendly_dog, weight, 
+    has_allergies, allergies, notes } = request.body;
   const { id } = request.params;
 
-  await update(id, { username, fullName, email, password });
+  await updateDog(id, { name, age, breed, vaccinated, unfriendly_dog, weight, 
+    has_allergies, allergies, notes });
+
   response.status(204).end();
 };
 
-exports.deleteUser = async function (request, response) {
+exports.deleteDog = async function (request, response) {
   const { id } = request.params;
-  await deleteById(id);
+  await deleteDog(id);
   response.status(204).end();
 };
-
-//Esto solo es una prueba que hice para ver si se sincroniza el repo con el servidor
