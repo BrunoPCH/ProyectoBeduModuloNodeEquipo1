@@ -15,6 +15,10 @@ initDatabase();
 
 // Routers
 const createUserRouter = require("./routers/user.js");
+
+const dogs  = require("./routers/dog");
+
+
 // Prueba ruta helloworld
 const helloWorld = require("./routers/helloworld");
 
@@ -24,6 +28,7 @@ const unknownError = require("./middlewares/unknown-error");
 
 //Declaration of Routers
 app.use(createUserRouter);
+app.use(dogs);
 // Prueba ruta helloworld
 app.use(helloWorld);
 
