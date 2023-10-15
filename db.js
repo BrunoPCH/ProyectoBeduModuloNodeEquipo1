@@ -4,7 +4,7 @@ const { connect, sync } = require("./models/sequelize");
 // Import model of BD of USERs
 const User = require("./models/user");
 // Import model of BD of DOGs
-//const Dog = require("./models/dog");
+const Dog = require("./models/dog");
 // Import model of BD of BOOKINGs
 const Booking = require("./models/booking");
 

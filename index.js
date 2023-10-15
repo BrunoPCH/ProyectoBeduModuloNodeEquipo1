@@ -14,6 +14,8 @@ const { initDatabase } = require("./db");
 initDatabase();
 
 // Routers
+const dogsRouter  = require("./routers/dog");
+
 const createUserRouter = require("./routers/user");
 //Ruta de bookings
 const createBookingRouter = require("./routers/booking");
@@ -26,6 +28,7 @@ const unknownError = require("./middlewares/unknown-error");
 
 //Declaration of Routers
 app.use(createUserRouter);
+app.use(dogsRouter);
 //Para hacer reservaciones
 app.use(createBookingRouter);
 // Prueba ruta helloworld
