@@ -9,11 +9,11 @@ exports.findById = function (id) {
 };
 
 exports.insert = function (data) {
-  return booking.create(data);
+  return Booking.create(data);
 };
 
 exports.update = async function (id, data) {
-  await User.update(data, {
+  await Booking.update(data, {
     where: {
       id,
     },
@@ -21,6 +21,6 @@ exports.update = async function (id, data) {
 };
 
 exports.deleteById = async function (id) {
-  const booking = await User.findByPk(id);
+  const booking = await Booking.findByPk(id);
   await booking.destroy();
 };

@@ -9,17 +9,15 @@ const Dog = require("./models/dog");
 const Booking = require("./models/booking");
 
 // // "Un usuario tiene muchas mascotas"
-// User.hasMany(Dog);
-// Dog.belongsTo(User);
+User.hasMany(Dog);
+Dog.belongsTo(User);
 
 // // "Un perro puede tener muchas reservaciones"
-// Dog.hasMany(Booking);
-// Booking.belongsTo(Dog);
+Dog.hasMany(Booking);
+Booking.belongsTo(Dog);
 
 //Exporta BD y ESPERA FUNCIONES ASINCRONAS CONNECT y SYNC que estan en sequelize.js
 exports.initDatabase = async function () {
-  //FALTA PONER LAS RELACIONES DE LA DB
-
   await connect();
   await sync();
 };

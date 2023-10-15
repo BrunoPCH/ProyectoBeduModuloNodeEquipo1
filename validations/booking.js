@@ -11,6 +11,7 @@ const Joi = require("joi");
 //     }
 
 exports.createBookingSchema = Joi.object({
+  idDog: Joi.number().required(),
   checkInDate: Joi.date().greater("now").required(),
   checkOutDate: Joi.date().greater(Joi.ref("checkInDate")).required(),
   isBookingActive: Joi.boolean().optional(),
