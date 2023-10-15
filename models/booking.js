@@ -14,7 +14,7 @@ const { sequelize } = require("./sequelize");
 //     }
 
 module.exports = sequelize.define("booking", {
-  idDog: {
+  dogId: {
     type: DataTypes.INTEGER,
     allowNull: false
   },
@@ -31,7 +31,7 @@ module.exports = sequelize.define("booking", {
   isBookingActive: {
     type: DataTypes.BOOLEAN,
     allowNull: true,
-    defaultValue: false,
+    //defaultValue: false,
   },
   observations: {
     type: DataTypes.STRING(200),

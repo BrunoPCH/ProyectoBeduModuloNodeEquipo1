@@ -18,22 +18,23 @@ exports.getBooking = async function (request, response) {
 };
 
 exports.createBooking = async function (request, response) {
-  const { checkInDate, checkOutDate, observations } = request.body;
+  const { dogId, checkInDate, checkOutDate, isBookingActive, observations } = request.body;
   const booking = await insert({
-    idDog,
+    dogId,
     checkInDate,
     checkOutDate,
     observations,
-    userId: request.user.id,
+    isBookingActive
+    //userId: request.user.id,
   });
   response.status(201).json(booking);
 };
 
 exports.updateBooking = async function (request, response) {
-  const { idDog, checkInDate, checkOutDate, observations } = request.body;
+  const { dogId, checkInDate, checkOutDate, isBookingActive,  observations } = request.body;
   const { id } = request.params;
 
-  await update(id, { idDog, checkInDate, checkOutDate, observations });
+  await update(id, { dogId, checkInDate, checkOutDate, isBookingActive, observations });
   response.status(204).end();
 };
 

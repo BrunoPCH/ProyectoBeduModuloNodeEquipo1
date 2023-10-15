@@ -11,11 +11,12 @@ const Joi = require("joi");
 //     }
 
 exports.createBookingSchema = Joi.object({
-  idDog: Joi.number().required(),
-  checkInDate: Joi.date().greater("now").required(),
+  dogId: Joi.number().required(),
+  //checkInDate: Joi.date().greater("now").required(),
+  checkInDate: Joi.date().required(),
   checkOutDate: Joi.date().greater(Joi.ref("checkInDate")).required(),
   isBookingActive: Joi.boolean().optional(),
-  observations: Joi.string().min(8).max(200).optional(),
+  observations: Joi.string().min(3).max(200).optional(),
 });
 
 exports.updateBookingSchema = Joi.object({
