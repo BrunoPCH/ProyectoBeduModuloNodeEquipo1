@@ -14,20 +14,23 @@ const { initDatabase } = require("./db");
 initDatabase();
 
 // Routers
-const createUserRouter = require("./routers/user.js");
-
 const dogsRouter  = require("./routers/dog");
 
+const createUserRouter = require("./routers/user");
+//Ruta de bookings
+const createBookingRouter = require("./routers/booking");
 // Prueba ruta helloworld
 const helloWorld = require("./routers/helloworld");
 
-//MAnejo de errores
+//Manejo de errores
 const validationError = require("./middlewares/validation-error");
 const unknownError = require("./middlewares/unknown-error");
 
 //Declaration of Routers
 app.use(createUserRouter);
 app.use(dogsRouter);
+//Para hacer reservaciones
+app.use(createBookingRouter);
 // Prueba ruta helloworld
 app.use(helloWorld);
 
