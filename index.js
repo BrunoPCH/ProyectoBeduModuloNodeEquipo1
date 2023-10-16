@@ -17,6 +17,9 @@ initDatabase();
 const createUserRouter = require("./routers/user.js");
 // Prueba ruta helloworld
 const helloWorld = require("./routers/helloworld");
+// Router auth.js
+const authRouter = require("./routers/auth");
+
 
 //MAnejo de errores
 const validationError = require("./middlewares/validation-error");
@@ -26,6 +29,8 @@ const unknownError = require("./middlewares/unknown-error");
 app.use(createUserRouter);
 // Prueba ruta helloworld
 app.use(helloWorld);
+//Ruta auth.js
+app.use(authRouter);
 
 //Manejo de errores con un MIDLEWARE FINAL
 // Los midlewares de manejo de errores reciben 4 parametros ERROR, REQUEST, RESPONSE, NEXT
