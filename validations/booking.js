@@ -24,6 +24,7 @@ exports.updateBookingSchema = Joi.object({
   checkInDate: Joi.date().greater("now").optional(),
   checkOutDate: Joi.date().greater(Joi.ref("checkInDate")).optional(),
   isBookingActive: Joi.boolean().optional(),
+  observations: Joi.string().min(3).max(200).optional(),
 }).min(1);
 
 exports.paramsSchema = Joi.object({
