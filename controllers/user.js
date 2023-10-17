@@ -20,7 +20,7 @@ exports.getUser = async function (request, response) {
 
 exports.createUser = async function (request, response) {
   const { username, fullName, email, password } = request.body;
-  const user = await insert({ username, fullName, email, password, userId });
+  const user = await insert({ username, fullName, email, password, userId: 1 });
   response.status(201).json(user);
 };
 
