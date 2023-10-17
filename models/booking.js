@@ -14,10 +14,10 @@ const { sequelize } = require("./sequelize");
 //     }
 
 module.exports = sequelize.define("booking", {
-  dogId: {
-    type: DataTypes.INTEGER,
-    allowNull: false
-  },
+  // dogId: {
+  //   type: DataTypes.INTEGER,
+  //   allowNull: false
+  // },
   checkInDate: {
     type: DataTypes.DATEONLY,
     allowNull: false,
