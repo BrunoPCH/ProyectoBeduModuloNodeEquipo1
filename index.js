@@ -16,25 +16,24 @@ initDatabase();
 // Routers
 const dogsRouter = require("./routers/dog");
 
-const createUserRouter = require("./routers/user");
+const UserRouter = require("./routers/user");
 //Ruta de bookings
-const createBookingRouter = require("./routers/booking");
+const BookingRouter = require("./routers/booking");
 // Prueba ruta helloworld
 const helloWorld = require("./routers/helloworld");
 const goodBye = require("./routers/goodbye");
 // Router auth.js
 const authRouter = require("./routers/auth");
 
-
 //Manejo de errores
 const validationError = require("./middlewares/validation-error");
 const unknownError = require("./middlewares/unknown-error");
 
 //Declaration of Routers
-app.use(createUserRouter);
+app.use(UserRouter);
 app.use(dogsRouter);
 //Para hacer reservaciones
-app.use(createBookingRouter);
+app.use(BookingRouter);
 // Prueba ruta helloworld
 app.use(helloWorld);
 app.use(goodBye);

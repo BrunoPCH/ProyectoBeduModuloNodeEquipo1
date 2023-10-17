@@ -11,7 +11,7 @@ module.exports = sequelize.define("dog", {
     allowNull: false,
     validate: {
       len: [1, 13],
-    }
+    },
   },
   breed: {
     type: DataTypes.STRING(20),
@@ -19,27 +19,27 @@ module.exports = sequelize.define("dog", {
   },
   vaccinated: {
     type: DataTypes.BOOLEAN,
-    allowNull: false
+    allowNull: false,
   },
-  unfriendly_dog: {
-    type : DataTypes.BOOLEAN
+  is_unfriendly_dog: {
+    type: DataTypes.BOOLEAN,
   },
   weight: {
     type: DataTypes.INTEGER(20),
     validate: {
       len: [1, 70],
-    }
+    },
   },
   has_allergies: {
     type: DataTypes.BOOLEAN,
-    allowNull: false
+    allowNull: false,
   },
   allergies: {
     type: DataTypes.STRING(200),
-    allowNull: true
+    allowNull: true,
   },
   notes: {
     type: DataTypes.STRING(200),
-    allowNull: true
-  }
+    allowNull: true,
+  },
 });

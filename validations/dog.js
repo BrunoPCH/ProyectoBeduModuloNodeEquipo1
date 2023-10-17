@@ -9,11 +9,11 @@ exports.createDogSchema = Joi.object({
   age: Joi.number().max(50).required(),
   breed: Joi.string().max(20).optional(),
   vaccinated: Joi.boolean().required(),
-  unfriendly_dog: Joi.boolean().required(),
+  is_unfriendly_dog: Joi.boolean().required(),
   weight: Joi.number().min(1).max(70).optional(),
   has_allergies: Joi.boolean().required(),
   allergies: Joi.string().max(200).optional(),
-  notes: Joi.string().max(200).optional()
+  notes: Joi.string().max(200).optional(),
 });
 
 exports.updateDogSchema = Joi.object({
@@ -25,13 +25,13 @@ exports.updateDogSchema = Joi.object({
   age: Joi.number().max(50).optional(),
   breed: Joi.string().max(20).optional(),
   vaccinated: Joi.boolean().optional(),
-  unfriendly_dog: Joi.boolean().optional(),
+  is_unfriendly_dog: Joi.boolean().optional(),
   weight: Joi.number().min(1).max(70).optional(),
   has_allergies: Joi.boolean().optional(),
   allergies: Joi.string().max(200).optional(),
-  notes: Joi.string().max(200).optional()
+  notes: Joi.string().max(200).optional(),
 }).min(1);
 
 exports.paramsIdSchema = Joi.object({
-  id: Joi.number().required()
+  id: Joi.number().required(),
 });

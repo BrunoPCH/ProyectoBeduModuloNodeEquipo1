@@ -1,14 +1,14 @@
 const dog = require("../models/dog");
 
-exports.insertDog = function (data) {
+exports.insert = function (data) {
   return dog.create(data);
 };
 
-exports.findDog = function (id) {
+exports.findById = function (id) {
   return dog.findByPk(id);
 };
 
-exports.updateDog = async function (id, data) {
+exports.update = async function (id, data) {
   await dog.update(data, {
     where: {
       id,
@@ -16,11 +16,11 @@ exports.updateDog = async function (id, data) {
   });
 };
 
-exports.getAllDog = function () {
+exports.findAll = function () {
   return dog.findAll();
 };
 
-exports.deleteDog = async function (id) {
+exports.deleteById = async function (id) {
   const post = await dog.findByPk(id);
   await post.destroy();
 };

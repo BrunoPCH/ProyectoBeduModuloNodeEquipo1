@@ -7,8 +7,9 @@ const User = require("./models/user");
 const Dog = require("./models/dog");
 // Import model of BD of BOOKINGs
 const Booking = require("./models/booking");
+const booking = require("./models/booking");
 
-// // "Un usuario tiene muchas mascotas"
+// // "Un usuario tiene muchos perros"
 User.hasMany(Dog);
 Dog.belongsTo(User);
 
