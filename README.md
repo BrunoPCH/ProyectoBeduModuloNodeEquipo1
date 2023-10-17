@@ -2,16 +2,15 @@
 
 ## Equipo T1
 
-- **Alan Fabian Valdez** - falaq23.2022@gmail - @AlfaVQ
-- **Bruno Pérez Chávez**
-  bruno.perez.ch@gmail.com - @BrunoPCH
-- **Vinisa Citlalli Hernández Basilio** - citlallihernandezbasilio@gmail.com - @CitlalliHdezBasilio
+- **Alan Fabian V.** - @AlfaVQ
+- **Bruno Pérez C.** - @BrunoPCH
+- **V. Citlalli Hernández B.** - @CitlalliHdezBasilio
 
 ### Descripción
 
 Api que sirve para realizar reservaciones de una pensión de perros que trata de seguir las buenas prácticas de REST.
 
-### [ENLACE (http://20.84.146.46:8080/) ] de despliegue en Azure
+### [ENLACE(http://20.84.146.46:8080/)] de despliegue en Azure
 
 ### Funcionalidades de !Perrin! !Perrout!
 
@@ -38,7 +37,7 @@ Las validaciones se hicieron en:
 - Por la dependencia Joi para NODE
 - Y en el manejo de errores se emplea la dependencia express-joi-validation
 
-[Enlace del diagrama (https://dbdiagram.io/d/PerrinPerrout-6526fd72ffbf5169f082f222)]
+[Enlace-del-diagrama(https://dbdiagram.io/d/PerrinPerrout-6526fd72ffbf5169f082f222)]
 
 ![Esquema de los modelos de la base de datos](requerimentos/PerrinPerrout.png)
 
@@ -108,17 +107,17 @@ Las validaciones se hicieron en:
 
 ### Trabajos realizados por los integrantes (ordenados alfabeticamente) | Créditos:
 
-#### Alan Fabian Valdez
+#### Alan Fabian V.
 
-falaq23.2022@gmail - @AlfaVQ
+@AlfaVQ
 
 **Desarrolló:**
 
 - Autenticación
 
-#### Bruno Pérez Chávez
+#### Bruno Pérez Ch.
 
-bruno.perez.ch@gmail.com - BrunoPCH
+@BrunoPCH
 
 **Desarrolló:**
 
@@ -130,9 +129,9 @@ bruno.perez.ch@gmail.com - BrunoPCH
   - Integración continua / despliegue continuo
   - Despliegue en Azure
 
-#### Vinisa Citlalli Hernández Basilio
+#### V. Citlalli Hernández B.
 
-citlallihernandezbasilio@gmail.com - CitlalliHdezBasilio
+@CitlalliHdezBasilio
 
 **Desarrolló:**
 
