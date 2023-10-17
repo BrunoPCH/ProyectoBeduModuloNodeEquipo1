@@ -20,6 +20,7 @@ exports.createBookingSchema = Joi.object({
 });
 
 exports.updateBookingSchema = Joi.object({
+  dogId: Joi.number().optional(),
   checkInDate: Joi.date().greater("now").optional(),
   checkOutDate: Joi.date().greater(Joi.ref("checkInDate")).optional(),
   isBookingActive: Joi.boolean().optional(),
