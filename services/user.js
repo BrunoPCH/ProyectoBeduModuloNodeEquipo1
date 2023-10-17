@@ -24,3 +24,11 @@ exports.deleteById = async function (id) {
   const post = await User.findByPk(id);
   await post.destroy();
 };
+
+export.findByUsername = function (username){
+  return User.findOne({
+    where: {
+      username,
+    },
+  });
+};
