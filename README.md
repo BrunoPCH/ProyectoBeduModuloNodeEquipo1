@@ -10,7 +10,7 @@
 
 Api que sirve para realizar reservaciones de una pensión de perros que trata de seguir las buenas prácticas de REST.
 
-### [ENLACE](http://20.84.146.46:8080/) de despliegue en Azure
+### [ENLACE](http://20.84.146.46:8080/helloworld) de despliegue en Azure
 
 ### Funcionalidades de !Perrin! !Perrout!
 
@@ -37,7 +37,7 @@ Las validaciones se hicieron en:
 - Por la dependencia Joi para NODE
 - Y en el manejo de errores se emplea la dependencia express-joi-validation
 
-[Enlace-del-diagrama(https://dbdiagram.io/d/PerrinPerrout-6526fd72ffbf5169f082f222)]
+[Enlace-del-diagrama](https://dbdiagram.io/d/PerrinPerrout-6526fd72ffbf5169f082f222)
 
 ![Esquema de los modelos de la base de datos](requerimentos/PerrinPerrout.png)
 
