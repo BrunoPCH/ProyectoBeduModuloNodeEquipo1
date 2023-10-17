@@ -21,11 +21,11 @@ exports.createBooking = async function (request, response) {
   const { dogId, checkInDate, checkOutDate, isBookingActive, observations } =
     request.body;
   const booking = await insert({
+    dogId: request.dog.id,
     checkInDate,
     checkOutDate,
     observations,
     isBookingActive,
-    dogId: request.dog.id,
   });
   response.status(201).json(booking);
 };
