@@ -2,8 +2,8 @@
 
 ## Equipo T1
 
-- **Alan Fabian V.** - [AlfaVQ](https://github.com/AlfaVQ)
-- **Bruno Pérez C.** - [@BrunoPCH](https://github.com/BrunoPCH) @BrunoPCH
+- **Alan Fabian V.** - [@AlfaVQ](https://github.com/AlfaVQ)
+- **Bruno Pérez C.** - [@BrunoPCH](https://github.com/BrunoPCH)
 - **V. Citlalli Hernández B.** - [@CitlalliHdezBasilio](https://github.com/CitlalliHdezBasilio)
 
 ### Descripción
