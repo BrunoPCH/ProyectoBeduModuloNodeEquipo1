@@ -2,8 +2,8 @@
 
 ## Equipo T1
 
-- **Alan Fabian V.** - [@AlfaVQ](https://github.com/AlfaVQ)
-- **Bruno Pérez C.** - [@BrunoPCH](https://github.com/BrunoPCH)
+- **Alan Fabian V.** - [AlfaVQ](https://github.com/AlfaVQ)
+- **Bruno Pérez C.** - [@BrunoPCH](https://github.com/BrunoPCH) @BrunoPCH
 - **V. Citlalli Hernández B.** - [@CitlalliHdezBasilio](https://github.com/CitlalliHdezBasilio)
 
 ### Descripción
@@ -117,7 +117,7 @@ Las validaciones se hicieron en:
 
 #### Bruno Pérez Ch.
 
-[@BrunoPCH](https://github.com/BrunoPCH)
+[BrunoPCH](https://github.com/BrunoPCH)
 
 **Desarrolló:**
 
@@ -131,7 +131,7 @@ Las validaciones se hicieron en:
 
 #### V. Citlalli Hernández B.
 
-[@CitlalliHdezBasilio](https://github.com/CitlalliHdezBasilio)
+[CitlalliHdezBasilio](https://github.com/CitlalliHdezBasilio)
 
 **Desarrolló:**
 
