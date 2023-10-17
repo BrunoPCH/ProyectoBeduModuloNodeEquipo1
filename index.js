@@ -22,6 +22,9 @@ const createBookingRouter = require("./routers/booking");
 // Prueba ruta helloworld
 const helloWorld = require("./routers/helloworld");
 const goodBye = require("./routers/goodbye");
+// Router auth.js
+const authRouter = require("./routers/auth");
+
 
 //Manejo de errores
 const validationError = require("./middlewares/validation-error");
@@ -35,6 +38,8 @@ app.use(createBookingRouter);
 // Prueba ruta helloworld
 app.use(helloWorld);
 app.use(goodBye);
+//Ruta auth.js
+app.use(authRouter);
 
 //Manejo de errores con un MIDLEWARE FINAL
 // Los midlewares de manejo de errores reciben 4 parametros ERROR, REQUEST, RESPONSE, NEXT
