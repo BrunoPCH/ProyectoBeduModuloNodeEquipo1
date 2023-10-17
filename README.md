@@ -131,7 +131,7 @@ Las validaciones se hicieron en:
 
 #### V. Citlalli Hernández B.
 
-[CitlalliHdezBasilio](https://github.com/CitlalliHdezBasilio)
+[@CitlalliHdezBasilio](https://github.com/CitlalliHdezBasilio)
 
 **Desarrolló:**
 
