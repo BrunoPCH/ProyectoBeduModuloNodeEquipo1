@@ -25,7 +25,7 @@ exports.deleteById = async function (id) {
   await post.destroy();
 };
 
-export.findByUsername = function (username){
+exports.findByUsername = function (username) {
   return User.findOne({
     where: {
       username,
