@@ -30,3 +30,6 @@ exports.updateBookingSchema = Joi.object({
 exports.paramsSchema = Joi.object({
   id: Joi.number().required(),
 });
+exports.findBookByDogIdSchema = Joi.object({
+  dogId: Joi.number().required(),
+});

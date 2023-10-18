@@ -1,6 +1,7 @@
 const {
   findAll,
   findById,
+  findByDogId,
   insert,
   deleteById,
   update,
@@ -14,6 +15,11 @@ exports.getBookings = async function (request, response) {
 exports.getBooking = async function (request, response) {
   const { id } = request.params;
   const booking = await findById(id);
+  response.status(200).json(booking);
+};
+exports.getBookingByDogId = async function (request, response) {
+  const { dogId } = request.params;
+  const booking = await findByDogId(dogId);
   response.status(200).json(booking);
 };
 

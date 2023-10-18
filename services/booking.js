@@ -7,6 +7,13 @@ exports.findAll = function () {
 exports.findById = function (id) {
   return Booking.findByPk(id);
 };
+exports.findByDogId = function (dogId) {
+  return Booking.findAll({
+    where: {
+      dogId,
+    },
+  });
+};
 
 exports.insert = function (data) {
   return Booking.create(data);

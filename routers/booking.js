@@ -5,6 +5,7 @@ const {
   getBookings,
   createBooking,
   getBooking,
+  getBookingByDogId,
   deleteBooking,
   updateBooking,
 } = require("../controllers/booking");
@@ -15,11 +16,17 @@ const {
   createBookingSchema,
   updateBookingSchema,
   paramsSchema,
+  findBookByDogIdSchema,
 } = require("../validations/booking");
 
 router.get("/bookings", getBookings);
-
 router.get("/bookings/:id", validator.params(paramsSchema), getBooking);
+
+router.get(
+  "/bookings/dog/:dogId",
+  validator.params(findBookByDogIdSchema),
+  getBookingByDogId
+);
 
 router.post(
   "/bookings",
