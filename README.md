@@ -100,6 +100,7 @@ Las validaciones se hicieron en:
   - checkOutDate
   - observations
 - **GET/bookings/:id:** regresa una reservación por su ID
+- **GET/bookings/dog/:dogId** regresa todas las reservaciones correspondientes a un perro por medio del ID del perro
 - **GET/bookings:** Regresa todas las reservaciones registradas en Base de datos \*Solo para pruebas.
 - **PUT/bookings/:id:** Actualiza o modifica algún dato de una reservación seleccionada por su ID. Al menos debe de tener algún dato de los siguientes:
   - checkInDate
@@ -146,3 +147,4 @@ Las validaciones se hicieron en:
 - Revisión y gestión de código en GitHub:
   - Resolvió conflictos de Ramas
   - Gestiono y aplico los cambios
+- Video
