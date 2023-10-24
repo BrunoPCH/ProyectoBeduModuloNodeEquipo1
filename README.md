@@ -52,8 +52,8 @@ Las validaciones se hicieron en:
 
 #### Usuarios
 
-- **GET/login:** Esta ruta te permite ingresar como usuario
-- **POST/users:** Esta ruta te permite registrarte los datos que deberá tener son:
+- **POST/login:** Permite ingresar como usuario
+- **POST/users:** Registra un usuario con los siguientes datos:
   - username
   - fullName
   - email
