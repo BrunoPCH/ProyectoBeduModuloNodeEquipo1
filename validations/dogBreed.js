@@ -12,7 +12,7 @@ const Joi = require("joi");
 //   );
 
 exports.createDogBreedSchema = Joi.object({
-  breed: Joi.string.min(10).max(60).required(),
+  breed: Joi.string(60).uppercase.required(),
   group: Joi.string.min(10).max(60).optional(),
   section: Joi.string.min(10).max(60).optional(),
   country: Joi.string.min(20).max(60).optional(),
@@ -24,7 +24,7 @@ exports.createDogBreedSchema = Joi.object({
 // Se debe de buscar por medio del nombre de la raza
 exports.updateDogBreedSchema = Joi.object({
   id: Joi.number().optional(),
-  breed: Joi.string.min(10).max(60).requiered(),
+  breed: Joi.string(60).uppercase.required(),
   group: Joi.string.min(10).max(60).optional(),
   section: Joi.string.min(10).max(60).optional(),
   country: Joi.string.min(20).max(60).optional(),
@@ -38,7 +38,7 @@ exports.paramsSchema = Joi.object({
 });
 // Se debe de buscar por medio del nombre de la raza
 exports.findDogBreedByBreedSchema = Joi.object({
-  breed: Joi.string.min(10).max(60).requiered(),
+  breed: Joi.string(60).uppercase.required(),
 });
 exports.findDogBreedByGroupSchema = Joi.object({
   group: Joi.string.min(10).max(60).requiered(),
