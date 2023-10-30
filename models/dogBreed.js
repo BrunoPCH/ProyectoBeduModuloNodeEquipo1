@@ -14,7 +14,7 @@ const { sequelize } = require("./sequelize");
 //     `pdfBreed` varchar(200)
 //   );
 
-module.exports = sequelize.define("DogBreed", {
+module.exports = sequelize.define("dogBreed", {
   id: {
     type: DataTypes.INTEGER,
     allowNull: false,

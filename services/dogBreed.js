@@ -32,10 +32,10 @@ exports.update = async function (breed, data) {
 };
 
 exports.deleteByBreed = async function (breed) {
-  const breed = await Breed.findAll(breed, {
+  const DogBreed = await DogBreed.findAll(breed, {
     where: {
       breed,
     },
   });
-  await breed.destroy();
+  await DogBreed.destroy();
 };
