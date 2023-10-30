@@ -35,3 +35,16 @@ exports.sync = async function () {
     console.error(e);
   }
 };
+
+//AGREGANDO SEEDER
+const breedData = require("../informationResources/fciBreedData.json");
+
+export default {
+  up: async (queryInterface) =>
+    queryInterface.bulkInsert("dogBreed", [breedData], {}),
+  down: async (queryInterface) => {
+    await queryInterface.bulkDelete("dogBreed", {
+      [Op.or]: [breedData],
+    });
+  },
+};
