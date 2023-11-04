@@ -28,7 +28,7 @@ router.get(
 );
 
 router.get(
-  "/dog-breeds/:group",
+  "/dog-breeds/group/:group",
   validator.params(findDogBreedByGroupSchema),
   getDogBreedByGroup
 );
