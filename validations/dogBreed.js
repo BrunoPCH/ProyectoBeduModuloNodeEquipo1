@@ -41,5 +41,5 @@ exports.findDogBreedByBreedSchema = Joi.object({
   breed: Joi.string().max(60).uppercase().required(),
 });
 exports.findDogBreedByGroupSchema = Joi.object({
-  group: Joi.string().min(10).max(60).required(),
+  group: Joi.string().max(60).required(),
 });
