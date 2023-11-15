@@ -14,8 +14,8 @@ module.exports = sequelize.define("dog", {
     },
   },
   breed: {
-    type: DataTypes.STRING(20),
-    allowNull: true,
+    type: DataTypes.STRING(60),
+    allowNull: false,
   },
   vaccinated: {
     type: DataTypes.BOOLEAN,

@@ -6,8 +6,8 @@ exports.createDogSchema = Joi.object({
     .max(50)
     .pattern(/^(?=.{2,50}$)(?![_.])(?!.*[_.]{2})[a-zA-Z._]+(?<![_.])$/)
     .required(),
-  age: Joi.number().max(50).required(),
-  breed: Joi.string().max(20).optional(),
+  age: Joi.number().max(60).required(),
+  breed: Joi.string().max(20).required(),
   vaccinated: Joi.boolean().required(),
   is_unfriendly_dog: Joi.boolean().required(),
   weight: Joi.number().min(1).max(70).optional(),

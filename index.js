@@ -24,6 +24,8 @@ const helloWorld = require("./routers/helloworld");
 const goodBye = require("./routers/goodbye");
 // Router auth.js
 const authRouter = require("./routers/auth");
+// Router DogBreeds
+const DogBreedRouter = require("./routers/dogBreed");
 
 //Manejo de errores
 const validationError = require("./middlewares/validation-error");
@@ -39,6 +41,9 @@ app.use(helloWorld);
 app.use(goodBye);
 //Ruta auth.js
 app.use(authRouter);
+
+//Ruta DogBreed
+app.use(DogBreedRouter);
 
 //Manejo de errores con un MIDLEWARE FINAL
 // Los midlewares de manejo de errores reciben 4 parametros ERROR, REQUEST, RESPONSE, NEXT
