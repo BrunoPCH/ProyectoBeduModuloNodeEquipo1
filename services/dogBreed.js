@@ -1,4 +1,4 @@
-const DogBreed = require("../models/dogbreed");
+const DogBreed = require("../models/dogBreed");
 
 exports.findAll = function () {
   return DogBreed.findAll();

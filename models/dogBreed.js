@@ -23,7 +23,6 @@ module.exports = sequelize.define("dogBreed", {
   },
   breed: {
     type: DataTypes.STRING(60),
-    unique: true,
     allowNull: false,
     primaryKey: true,
   },
