@@ -49,7 +49,7 @@ app.use(authRouter);
 app.use(DogBreedRouter);
 
 // Manejo de CORS
-app.use(cors);
+app.use(cors());
 //Manejo de errores con un MIDLEWARE FINAL
 // Los midlewares de manejo de errores reciben 4 parametros ERROR, REQUEST, RESPONSE, NEXT
 //
