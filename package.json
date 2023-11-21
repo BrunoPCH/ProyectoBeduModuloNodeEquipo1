@@ -27,6 +27,7 @@
     "nodemon": "^3.0.1"
   },
   "dependencies": {
+    "cors": "^2.8.5",
     "express-joi-validation": "^5.0.1",
     "joi": "^17.11.0",
     "jsonwebtoken": "^9.0.2",
