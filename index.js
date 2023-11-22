@@ -1,9 +1,11 @@
+// Configurando CORS
+const cors = require("cors");
 // Intalling express
 const express = require("express");
 const app = express();
 
-// Configurando CORS
-var cors = require("cors");
+// Manejo de CORS
+app.use(cors());
 
 //Declaring EXPRESS
 app.use(express.json());
@@ -48,8 +50,6 @@ app.use(authRouter);
 //Ruta DogBreed
 app.use(DogBreedRouter);
 
-// Manejo de CORS
-app.use(cors());
 //Manejo de errores con un MIDLEWARE FINAL
 // Los midlewares de manejo de errores reciben 4 parametros ERROR, REQUEST, RESPONSE, NEXT
 //
